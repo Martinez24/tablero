@@ -50,10 +50,10 @@
         <section class="content">
           <div class="panel">
             <div class="panel-heading text-center">
-                <h1>Bienvenido</h1>
+                <h1>Bienvenid@</h1>
                 <h3><?php echo $_SESSION['usuario']['nombre']?></h3>
                 <h4>a STCI (Sistema Tablero de Control Integral) de:</h4>
-                <img src="../assets/img/gpa.png" width="90">
+                <img src="../assets/img/plasma.png" width="450">
             </div>
             <div class="panel-body text-center">
               <h4>“Los logros de una organización son los resultados del esfuerzo combinado de cada individuo” </h4>

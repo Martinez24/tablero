@@ -53,7 +53,7 @@
             <div class="panel-heading text-center">
                 <h3>Bienvenido administrador</h3>
                 <h4> <?php echo $_SESSION['usuario']['nombre']?></h4>
-                <img src="assets/img/gpa.png" width="90">
+                <img src="assets/img/plasma.png" width="450">
             </div>
             <div class="panel-body text-center">
               <h4>“Los logros de una organización son los resultados del esfuerzo combinado de cada individuo” </h4>
