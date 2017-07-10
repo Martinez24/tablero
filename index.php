@@ -51,7 +51,8 @@
         <section class="content">
           <div class="panel">
             <div class="panel-heading text-center">
-                <h3>Bienvenido administrador <?php echo $_SESSION['usuario']['nombre']?></h3>
+                <h3>Bienvenido administrador</h3>
+                <h4> <?php echo $_SESSION['usuario']['nombre']?></h4>
                 <img src="assets/img/gpa.png" width="90">
             </div>
             <div class="panel-body text-center">

@@ -42,18 +42,23 @@ e<?php
 	    	$_SESSION['usuario'] = $user;
 	    	// Finalmente redireccionamos el index de administrador
 	    	header('Location: ../index.php');
-	    }else{
+
+	    	}if($tupla['tipo_usuario']=='INGE'){
 	    
 	    	$_SESSION['usuario'] = $user;
 	    	// Finalmente redireccionamos el index de los usuarios
 	    	header('Location: ../usuario/index.php');
-	    }
+
+	   		 }elseif($tupla['tipo_usuario']=='DIR'){
+	    	$_SESSION['usuario'] = $user;
+	    	header('Location: ../director/index.php');
+	   		 }
 	   		} else {
 	    	// Si no hay coincidencias direccionamos el login nuevamente
 	    	echo '<script language="javascript">
-        alert("Intentalo de nuevo, Contraseña o correo incorectos.")
-        window.location.href="../login.php";
-          </script>';
+        	alert("Intentalo de nuevo, Contraseña o correo incorectos.")
+        	window.location.href="../login.php";
+          	</script>';
 	    }
 	}
 
