@@ -132,7 +132,7 @@
                   $bd = 'tablero';
                   $conexion = @mysql_connect($host, $user, $password);
                   @mysql_select_db($bd, $conexion);
-                  $sql = "SELECT * FROM usuario order by nombre ";
+                  $sql = "SELECT * FROM usuario order by fecha_creacion DESC";
                   $resultado = mysql_query($sql, $conexion);
                   while ($usuario = mysql_fetch_assoc($resultado)) {
                     echo "<tr>";
